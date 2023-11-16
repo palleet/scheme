@@ -91,7 +91,10 @@ def do_lambda_form(expressions, env):
     validate_formals(formals)
     # BEGIN PROBLEM 7
     "*** YOUR CODE HERE ***"
-    print("DEBUG: EXPRESSIONS: ", expressions)
+    print("DEBUG: expressions: " , expressions)
+
+    return LambdaProcedure(formals, expressions.rest, env)
+
     # END PROBLEM 7
 
 def do_if_form(expressions, env):
